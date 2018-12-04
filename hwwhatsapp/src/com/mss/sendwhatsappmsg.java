@@ -15,7 +15,7 @@ public class sendwhatsappmsg {
         Message message = Message.creator(
         		new com.twilio.type.PhoneNumber("whatsapp:+5215515104658"), 
                 new com.twilio.type.PhoneNumber("whatsapp:+14155238886"), 
-                "Envio de mensaje Whatsapp")
+                "Envio de mensaje Whatsapp desde java")
             .create();
 
         System.out.println("confirmacion de mensaje whatsapp:" + message.getSid());
