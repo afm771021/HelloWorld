@@ -15,12 +15,10 @@ public class sendwhatsappmsg {
         Message message = Message.creator(
         		new com.twilio.type.PhoneNumber("whatsapp:+5215515104658"), 
                 new com.twilio.type.PhoneNumber("whatsapp:+14155238886"), 
-        		//new com.twilio.type.PhoneNumber("+12017785108"),
-                //new com.twilio.type.PhoneNumber("+5215515104658"), 
-                "Que onda Emmanuele...")
+                "Envio de mensaje Whatsapp")
             .create();
 
-        System.out.println(message.getSid());
+        System.out.println("confirmacion de mensaje whatsapp:" + message.getSid());
 
 	}
 
